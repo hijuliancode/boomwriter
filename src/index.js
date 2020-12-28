@@ -1,12 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import BoomwriterApp from './BoomwriterApp';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BoomwriterApp />
   </React.StrictMode>,
   document.getElementById('root')
 );
