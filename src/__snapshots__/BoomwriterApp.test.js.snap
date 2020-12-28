@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test in BoomwriterApp renders BoomwriterApp 1`] = `
+<div
+  className="BoomwriterApp"
+>
+  BoomwriterApp works!
+</div>
+`;

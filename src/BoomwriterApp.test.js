@@ -1,9 +1,11 @@
-import { render } from '@testing-library/react';
+import React from 'react';
+import { shallow } from 'enzyme';
 import BoomwriterApp from './BoomwriterApp';
 
 describe('test in BoomwriterApp', () => {
   test('renders BoomwriterApp', () => {
-    render(<BoomwriterApp />);
+    const wrapper = shallow(<BoomwriterApp />);
+    expect( wrapper ).toMatchSnapshot();
   });
 })
 
