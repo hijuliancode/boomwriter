@@ -1,0 +1,51 @@
+@import-normalize;
+
+/* Sofia */
+
+@font-face {
+  font-family: 'sofia-extralight';
+  src: url('./assets/fonts/Sofia/sofia_pro_extralight_az-webfont.woff2') format('woff2'),
+       url('./assets/fonts/Sofia/sofia_pro_extralight_az-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sofia-light';
+  src: url('./assets/fonts/Sofia/sofia_pro_light_az-webfont.woff2') format('woff2'),
+       url('./assets/fonts/Sofia/sofia_pro_light_az-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sofia-regular';
+  src: url('./assets/fonts/Sofia/sofia_pro_regular_az-webfont.woff2') format('woff2'),
+       url('./assets/fonts/Sofia/sofia_pro_regular_az-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sofia-medium';
+  src: url('./assets/fonts/Sofia/sofia_pro_medium_az-webfont.woff2') format('woff2'),
+       url('./assets/fonts/Sofia/sofia_pro_medium_az-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sofia-semibold';
+  src: url('./assets/fonts/Sofia/sofia_pro_semi_bold_az-webfont.woff2') format('woff2'),
+       url('./assets/fonts/Sofia/sofia_pro_semi_bold_az-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sofia-bold';
+  src: url('./assets/fonts/Sofia/sofia_pro_bold_az-webfont.woff2') format('woff2'),
+       url('./assets/fonts/Sofia/sofia_pro_bold_az-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

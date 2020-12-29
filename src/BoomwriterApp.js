@@ -1,6 +1,6 @@
 import React from 'react';
 
-function BoomwriterApp() {
+const BoomwriterApp = () => {
   return (
     <div className="BoomwriterApp">
       BoomwriterApp works!

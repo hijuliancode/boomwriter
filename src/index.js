@@ -1,11 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import BoomwriterApp from './BoomwriterApp';
 import reportWebVitals from './reportWebVitals';
+
+import './index.css';
+import GlobalStyle from './theme/globalStyle';
+import BoomwriterApp from './BoomwriterApp';
+
+/** Styles */
+import { ThemeProvider } from "styled-components";
+import * as Theme from "./theme"
 
 ReactDOM.render(
   <React.StrictMode>
-    <BoomwriterApp />
+    <ThemeProvider theme={ Theme }>
+      <GlobalStyle />
+      <BoomwriterApp />
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
