@@ -1,17 +1,34 @@
 import React from 'react';
-import Header from './components/shared/header';
-import Footer from './components/shared/footer';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import styled from 'styled-components';
+
+import HomeComponent from "./components/Home";
+import TheWritingBeeComponent from "./components/TheWritingBee";
+import HeaderComponent from "./components/shared/header";
+import FooterComponent from "./components/shared/footer";
+
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+`;
 
 const BoomwriterApp = () => {
   return (
-    <div className="BoomwriterApp">
-      BoomwriterApp works!
-
-      <hr/>
-
-      <Header />
-      <Footer />
-    </div>
+    <Router>
+      <Wrapper>
+        <HeaderComponent />
+        <Switch>
+          <Route exact
+            path="/home"
+            component={() => <HomeComponent />} />
+          <Route exact
+            path="/the-writing-bee"
+            component={() => <TheWritingBeeComponent />} />
+        </Switch>
+        <FooterComponent />
+      </Wrapper>
+    </Router>
   );
 }
 

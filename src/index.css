@@ -49,3 +49,9 @@
   font-weight: normal;
   font-style: normal;
 }
+
+/* Global Helpers */
+
+.selected {
+  background-color: red;
+}
