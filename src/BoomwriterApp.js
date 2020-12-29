@@ -20,7 +20,7 @@ const BoomwriterApp = () => {
         <HeaderComponent />
         <Switch>
           <Route exact
-            path="/home"
+            path="/"
             component={() => <HomeComponent />} />
           <Route exact
             path="/the-writing-bee"
