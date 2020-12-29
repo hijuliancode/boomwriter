@@ -31,7 +31,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   nav a.selected {
-    font-weight: 700;
+    text-shadow: 0 0px 1px;
   }
 `;
 
