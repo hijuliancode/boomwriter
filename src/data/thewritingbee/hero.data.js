@@ -1,4 +1,4 @@
-const writingBeeHeroData = {
+const heroData = {
   title: 'The global writing event that starts with your class!',
   titleImageUrl: 'https://boomwriter.com/static/media/beeLogo.706a20ca.png',
   description: 'For Grades 3-8',
@@ -20,4 +20,4 @@ const writingBeeHeroData = {
   ]
 };
 
-export default writingBeeHeroData;
+export default heroData;

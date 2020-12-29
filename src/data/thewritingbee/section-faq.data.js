@@ -1,5 +1,5 @@
-const writingBeeFAQData = {
-  title: '',
+const FAQData = {
+  title: 'Frequently asked questions',
   description: '',
   questions: [
     {
@@ -35,4 +35,4 @@ const writingBeeFAQData = {
   ]
 };
 
-export default writingBeeFAQData;
+export default FAQData;
