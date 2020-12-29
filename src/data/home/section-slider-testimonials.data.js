@@ -5,7 +5,7 @@ const testimonialsData = {
     type: 'button', // Button or Link
     text: 'Start your 30-day free trial',
     style: 'primary',
-    linkUrl: ''
+    url: ''
   },
   testimonials: [
     {

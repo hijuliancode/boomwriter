@@ -6,7 +6,7 @@ const awardsData = {
     type: 'button', // Button or Link
     text: 'Start your 30-day free trial',
     style: 'primary',
-    linkUrl: ''
+    url: ''
   },
   awards: [
     { title: 'Kids Safe Certified', imageUrl: 'https://www.kidsafeseal.com/sealimage/124387489510662211/boomwriter_large_darktm.png' },

@@ -4,8 +4,8 @@ import styled from 'styled-components';
 
 import HomeComponent from "./components/Home";
 import TheWritingBeeComponent from "./components/TheWritingBee";
-import HeaderComponent from "./components/shared/header";
-import FooterComponent from "./components/shared/footer";
+import HeaderComponent from "./components/shared/Header";
+import FooterComponent from "./components/shared/Footer";
 
 const Wrapper = styled.div`
   display: flex;

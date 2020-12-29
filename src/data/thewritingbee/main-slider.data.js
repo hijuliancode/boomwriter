@@ -11,7 +11,7 @@ const mainSliderData = {
         type: 'button', // Button or Link
         text: 'Create my class Writing Bee',
         style: 'secondary',
-        linkUrl: ''
+        url: ''
       },
     },
     {
@@ -24,7 +24,7 @@ const mainSliderData = {
         type: 'button', // Button or Link
         text: 'Create my class Writing Bee',
         style: 'secondary',
-        linkUrl: ''
+        url: ''
       },
     }
   ]

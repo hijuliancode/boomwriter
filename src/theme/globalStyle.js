@@ -15,6 +15,24 @@ const GlobalStyle = createGlobalStyle`
   }
   code { font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace; }
   @keyframes animation-skeleton {0%{background-position:-200px 0;}100%{background-position:calc(200px + 100%) 0;}}
+  a { text-decoration: none; }
+
+  .show-on-desktop {
+    display: none;
+    @media ${props => props.theme.MediaQueries.lg} {
+      display: block;
+    }
+  }
+  .show-on-mobile {
+    display: block;
+    @media ${props => props.theme.MediaQueries.lg} {
+      display: none;
+    }
+  }
+
+  nav a.selected {
+    font-weight: 700;
+  }
 `;
 
 export default GlobalStyle;

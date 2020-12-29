@@ -5,7 +5,7 @@ const consistencyData = {
     type: 'button', // Button or Link
     text: 'Start your 30-day free trial',
     style: 'primary',
-    linkUrl: ''
+    url: ''
   },
   images: {
     primaryImageUrl: 'https://boomwriter.com/static/media/learning.1a12676d.png',

@@ -6,7 +6,7 @@ const heroData = {
     type: 'button', // Button or Link
     text: 'Create my class Writing Bee',
     style: 'secondary',
-    linkUrl: ''
+    url: ''
   },
   banners: [
     {

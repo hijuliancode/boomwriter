@@ -11,16 +11,17 @@
  * Colors
  */
   export const colors = {
-    primary: '',
-    secondary: '',
-    success: '',
-    danger: '',
-    warning: '',
-    info: '',
-    light: '',
-    dark: '',
-    muted: '',
-    white: '',
+    brand1: '#2b4e7b;',
+    primary: '#065fe5',
+    secondary: '#ffa826',
+    success: '#C2DF0A',
+    danger: '#E42525',
+    warning: '#FFD100',
+    info: '#0050B5',
+    light: '#E5E5E5',
+    dark: '#131336',
+    muted: '#858585',
+    white: '#ffffff',
   };
 
 /**
@@ -55,7 +56,7 @@
 /**
  * Helpers
  */
-  export const isRadius = (_param) => baseSize * _param;
+  export const isRadius = (_param) => baseSize * _param + 'px';
 
 /**
  * Media Queries

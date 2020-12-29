@@ -22,7 +22,7 @@ const benefitsData = {
     type: 'button', // Button or Link
     text: 'Register your class for free',
     style: 'secondary',
-    linkUrl: ''
+    url: ''
   },
 };
 

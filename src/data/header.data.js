@@ -1,23 +1,24 @@
 const headerData = {
   logoUrl: 'data:image/png;base64,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',
-  nav: [
-    { name: 'Teachers', link: '', subitems: [] },
-    { name: 'Families', link: '', subitems: [] },
-    { name: 'Schools', link: '', subitems: [] },
-    { name: 'The Writing Bee', link: '', subitems: [] },
-    { name: 'Pricing', link: '', subitems: [] },
-    { name: 'Bookstore', link: '', subitems: [] },
-    { name: 'Company', link: '', subitems: [] },
+  logoUrlWhite: 'data:image/png;base64,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',
+  navItems: [
+    { id: '', name: 'Teachers', url: '/teachers', subitems: [] },
+    { id: '', name: 'Families', url: '/families', subitems: [] },
+    { id: '', name: 'Schools', url: '/schools', subitems: [] },
+    { id: '', name: 'The Writing Bee', url: '/the-writing-bee', subitems: [] },
+    { id: '', name: 'Pricing', url: '/pricing', subitems: [] },
+    { id: '', name: 'Bookstore', url: '/bookstore', subitems: [] },
+    { id: '', name: 'Company', url: '/company', subitems: [] },
   ],
   login: {
     text: 'Login',
-    link: ''
+    url: '/login'
   },
   button: {
     type: 'button',
     text: 'Start your 30-day free trial',
     style: 'secondary',
-    linkUrl: ''
+    url: ''
   },
 };
 

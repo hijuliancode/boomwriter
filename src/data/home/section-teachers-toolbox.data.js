@@ -10,7 +10,7 @@ const teachersToolboxData = {
         type: 'button', // Button or Link
         text: 'See More',
         style: 'primary',
-        linkUrl: ''
+        url: ''
       },
     },
     {
@@ -21,7 +21,7 @@ const teachersToolboxData = {
         type: 'button', // Button or Link
         text: 'See More',
         style: 'primary',
-        linkUrl: ''
+        url: ''
       },
     },
     {
@@ -32,7 +32,7 @@ const teachersToolboxData = {
         type: 'button', // Button or Link
         text: 'See More',
         style: 'primary',
-        linkUrl: ''
+        url: ''
       },
     },
   ]
