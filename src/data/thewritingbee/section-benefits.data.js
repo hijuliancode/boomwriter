@@ -1,5 +1,5 @@
-const writingBeeBenefitsData = {
-  title: '',
+const benefitsData = {
+  title: 'Benefits from using Boomwriter:',
   description: '',
   benefits: [
     {
@@ -26,4 +26,4 @@ const writingBeeBenefitsData = {
   },
 };
 
-export default writingBeeBenefitsData;
+export default benefitsData;

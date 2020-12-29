@@ -1,4 +1,4 @@
-const writingBeeWhatTheySayData = {
+const testimonialData = {
   title: 'What they say about the Writing Bee',
   description: '',
   author: {
@@ -9,4 +9,4 @@ const writingBeeWhatTheySayData = {
   }
 };
 
-export default writingBeeWhatTheySayData;
+export default testimonialData;

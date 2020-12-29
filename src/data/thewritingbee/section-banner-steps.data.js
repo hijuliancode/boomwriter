@@ -1,4 +1,4 @@
-const writingBeeBannerStepsData = {
+const bannerStepsData = {
   titleImageUrl: 'https://boomwriter.com/static/media/phaseTitle.5e7b20c1.png',
   title: 'Have your students compete while creating an original class story!',
   description: 'The Writing Bee utilizes Boomwriter’s unique and interactive group writing platform that allows each individual student to:',
@@ -31,4 +31,4 @@ const writingBeeBannerStepsData = {
   ]
 };
 
-export default writingBeeBannerStepsData;
+export default bannerStepsData;
