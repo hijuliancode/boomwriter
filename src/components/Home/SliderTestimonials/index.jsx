@@ -1,9 +1,8 @@
 import React from 'react'
-import styled from 'styled-components';
 
-const SliderTestimonialsElm = styled.div`
-  @media ${props => props.theme.MediaQueries.lg} {}
-`;
+import {
+  SliderTestimonialsElm,
+} from './style';
 
 const SliderTestimonialsComponent = () => {
   return (

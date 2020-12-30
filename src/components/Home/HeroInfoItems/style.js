@@ -14,7 +14,6 @@ const ItemInfo = styled.div`
   display: grid;
   grid-template-areas:
     "itemInfo_img itemInfo_text"
-    "itemInfo_img itemInfo_text"
     "itemInfo_img itemInfo_desc";
   img {
     grid-area: itemInfo_img;
@@ -25,6 +24,7 @@ const ItemInfo = styled.div`
     font-size: 50px;
     font-weight: 700;
     grid-area: itemInfo_text;
+    line-height: 1;
     margin: 0;
     text-align: center;
   }

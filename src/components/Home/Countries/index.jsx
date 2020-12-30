@@ -1,9 +1,8 @@
 import React from 'react'
-import styled from 'styled-components';
 
-const CountriesElm = styled.div`
-  @media ${props => props.theme.MediaQueries.lg} {}
-`;
+import {
+  CountriesElm,
+} from './style';
 
 const CountriesComponent = () => {
   return (

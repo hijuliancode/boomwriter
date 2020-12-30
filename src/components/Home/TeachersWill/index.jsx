@@ -1,9 +1,8 @@
 import React from 'react'
-import styled from 'styled-components';
 
-const TeachersWillElm = styled.div`
-  @media ${props => props.theme.MediaQueries.lg} {}
-`;
+import {
+  TeachersWillElm,
+} from './style';
 
 const TeachersWillComponent = () => {
   return (

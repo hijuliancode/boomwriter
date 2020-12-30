@@ -1,9 +1,8 @@
 import React from 'react'
-import styled from 'styled-components';
 
-const TheMissingPieceElm = styled.div`
-  @media ${props => props.theme.MediaQueries.lg} {}
-`;
+import {
+  TheMissingPieceElm,
+} from './style';
 
 const TheMissingPieceComponent = () => {
   return (

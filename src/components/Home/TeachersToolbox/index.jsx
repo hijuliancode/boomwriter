@@ -1,9 +1,8 @@
 import React from 'react'
-import styled from 'styled-components';
 
-const TeachersToolboxElm = styled.div`
-  @media ${props => props.theme.MediaQueries.lg} {}
-`;
+import {
+  TeachersToolboxElm,
+} from './style';
 
 const TeachersToolboxComponent = () => {
   return (

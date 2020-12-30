@@ -1,9 +1,8 @@
 import React from 'react'
-import styled from 'styled-components';
 
-const AwardsElm = styled.div`
-  @media ${props => props.theme.MediaQueries.lg} {}
-`;
+import {
+  AwardsElm,
+} from './style';
 
 const AwardsComponent = () => {
   return (

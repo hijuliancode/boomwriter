@@ -1,9 +1,8 @@
 import React from 'react'
-import styled from 'styled-components';
 
-const KeyFeaturesElm = styled.div`
-  @media ${props => props.theme.MediaQueries.lg} {}
-`;
+import {
+  KeyFeaturesElm,
+} from './style';
 
 const KeyFeaturesComponent = () => {
   return (

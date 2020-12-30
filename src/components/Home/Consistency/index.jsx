@@ -1,9 +1,8 @@
 import React from 'react'
-import styled from 'styled-components';
 
-const ConsistencyElm = styled.div`
-  @media ${props => props.theme.MediaQueries.lg} {}
-`;
+import {
+  ConsistencyElm,
+} from './style';
 
 const ConsistencyComponent = () => {
   return (
