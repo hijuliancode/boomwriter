@@ -2,21 +2,16 @@ import styled, { css } from 'styled-components';
 
 const HeaderElement = styled.header`
   align-items: center;
+  box-shadow: 0 0 30px -15px ${props => props.theme.colors.brand1};
   display: flex;
   height: 50px;
+  lalala: ${props => props.theme.colors.brand1};
   padding: 4px 32px;
-  position: relative;
+  position: fixed;
+  top: 0;
+  width: 100%;
   z-index: 100;
-  box-shadow: 0 0 30px -15px ${props => props.theme.colors.brand1};
-  ${params => {
-    return ( params.open )
-    ? `
-      background-color: transparent;
-    `
-    : `
-      background-color: ${props => props.theme.colors.white};
-    `
-  }}
+  background-color: ${props => ( props.open ) ? 'transparent' : props.theme.colors.white };
   .NavItems, .NavSession {
     display: none;
   }

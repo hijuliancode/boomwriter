@@ -33,6 +33,25 @@ const GlobalStyle = createGlobalStyle`
   nav a.selected {
     text-shadow: 0 0px 1px;
   }
+
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+    position: relative;
+    width: 100%;
+    @media ${props => props.theme.MediaQueries.lg} {
+      width: 992px;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+    @media ${props => props.theme.MediaQueries.xl} {
+      width: 1200px;
+    }
+  }
+
 `;
 
 export default GlobalStyle;

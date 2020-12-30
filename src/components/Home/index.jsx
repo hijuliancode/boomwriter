@@ -11,17 +11,15 @@ import SliderTestimonialsComponent from './SliderTestimonials';
 import AwardsComponent from './Awards';
 
 const HomeElm = styled.div`
-  padding: 0 12px;
+  padding: 50px 12px 0;
   @media ${props => props.theme.MediaQueries.lg} {
-    padding: 0 24px;
+    padding: 50px 24px 0;
   }
 `;
 
 const HomeComponent = () => {
   return (
-    <HomeElm>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus atque neque explicabo, esse nihil, quod sint beatae laboriosam sapiente quae inventore laborum enim cupiditate tenetur. Nemo illo modi dolor mollitia?
-      <hr/>
+    <HomeElm className="container">
       <HeroHomeComponent />
       <ConsistencyComponent />
       <TheMissingPieceComponent />
