@@ -4,6 +4,9 @@ const GlobalStyle = createGlobalStyle`
   * { box-sizing: border-box; }
   html, body, #root { height: 100%; }
   body {
+    background-image: url('https://boomwriter.com/static/media/hpWhiteWaveBg.63b7b4c7.png');
+    background-position: 0 1600px;
+    background-repeat: no-repeat;
     font-family: ${props => props.theme.typography.primary.name};
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -45,8 +48,7 @@ const GlobalStyle = createGlobalStyle`
     width: 100%;
     @media ${props => props.theme.MediaQueries.lg} {
       width: 992px;
-      padding-left: 24px;
-      padding-right: 24px;
+      padding: 0;
     }
     @media ${props => props.theme.MediaQueries.xl} {
       width: 1200px;

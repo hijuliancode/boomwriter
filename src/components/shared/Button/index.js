@@ -68,7 +68,7 @@ const Button = ( props ) => {
   );
 }
 
-const renderButton = ({ type, value, style = 'primary', width}) => {
+const renderButton = ({ type, value, style, width}) => {
   return (
     <>
     {
@@ -95,7 +95,7 @@ const renderLink = ({ value, style = 'primary', url, width}) => {
 Button.propTypes = {
   type: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
-  style: PropTypes.string,
+  style: PropTypes.string.isRequired,
   url: PropTypes.string,
 }
 

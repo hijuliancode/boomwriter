@@ -34,7 +34,7 @@ const HeaderComponent = ({ headerStyle = 'primary' }) => {
     return (
       <NavSession className="NavSession">
         <NavLink to={ headerData.login.url } activeClassName="selected" >{ headerData.login.text }</NavLink>
-        <Button type={headerData.button.type} value={headerData.button.text} style={headerData.button.style} width="auto" />
+        <Button type={ headerData.button.type } value={ headerData.button.text } style={ headerData.button.style } width="auto" />
       </NavSession>
     )
   }

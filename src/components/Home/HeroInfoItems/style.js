@@ -5,7 +5,7 @@ const HeroInfoItemsElm = styled.div`
   @media ${props => props.theme.MediaQueries.lg} {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 48px;
+    margin-bottom: 120px;
     padding-top: 40px;
   }
 `;
