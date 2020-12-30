@@ -13,8 +13,10 @@ const HeroHomeElm = styled.div`
   height: calc(100vh - 50px);
   justify-content: center;
   position: relative;
+  margin-bottom: 0;
   @media ${props => props.theme.MediaQueries.lg} {
     flex-direction: row;
+    margin-bottom: 48px;
     .HeroHomeElm__sideA,
     .HeroHomeElm__sideB {
       align-items: flex-start;

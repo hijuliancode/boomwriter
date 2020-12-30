@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import HeroHomeComponent from './HeroHome';
+import HeroInfoItemsComponent from './HeroInfoItems';
 import ConsistencyComponent from './Consistency';
 import TheMissingPieceComponent from './TheMissingPiece';
 import TeachersToolboxComponent from './TeachersToolbox';
@@ -21,6 +22,7 @@ const HomeComponent = () => {
   return (
     <HomeElm className="container">
       <HeroHomeComponent />
+      <HeroInfoItemsComponent />
       <ConsistencyComponent />
       <TheMissingPieceComponent />
       <TeachersToolboxComponent />

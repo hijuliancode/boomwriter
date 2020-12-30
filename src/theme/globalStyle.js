@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     margin: 0;
+    overflow-x: hidden;
     position: relative;
     h1, h2, h3, h4, h5, h6 { margin-top: 0; line-height: 1; }
     p { margin-top: 0; line-height: 1.2 }

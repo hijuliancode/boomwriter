@@ -19,8 +19,9 @@
     warning: '#FFD100',
     info: '#0050B5',
     light: '#E5E5E5',
-    dark: '#131336',
+    dark: '#4b4a4a',
     muted: '#858585',
+    black: '#131336',
     white: '#ffffff',
   };
 
