@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const ConsistencyElm = styled.div`
+const ConsistencyElm = styled.section`
   padding-bottom: 24px;
   @media ${props => props.theme.MediaQueries.lg} {
     display: flex;

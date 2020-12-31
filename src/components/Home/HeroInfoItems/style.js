@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
-const HeroInfoItemsElm = styled.div`
-  display: none;
+const HeroInfoItemsElm = styled.section`
   @media ${props => props.theme.MediaQueries.lg} {
     display: flex;
     justify-content: space-between;

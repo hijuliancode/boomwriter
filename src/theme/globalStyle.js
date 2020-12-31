@@ -21,6 +21,7 @@ const GlobalStyle = createGlobalStyle`
   @keyframes animation-skeleton {0%{background-position:-200px 0;}100%{background-position:calc(200px + 100%) 0;}}
   a { text-decoration: none; }
 
+  .hidden { display: none; }
   .show-on-desktop {
     display: none;
     @media ${props => props.theme.MediaQueries.lg} {
@@ -54,7 +55,6 @@ const GlobalStyle = createGlobalStyle`
       width: 1200px;
     }
   }
-
 `;
 
 export default GlobalStyle;

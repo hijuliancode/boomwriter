@@ -6,7 +6,7 @@ const TextAlign = css`
     text-align: left;
   }
 `;
-const HeroHomeElm = styled.div`
+const HeroHomeElm = styled.section`
   align-items: center;
   display: flex;
   flex-direction: column;

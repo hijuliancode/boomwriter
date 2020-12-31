@@ -2,16 +2,15 @@ import styled, { css } from 'styled-components';
 
 const HeaderElement = styled.header`
   align-items: center;
+  background-color: ${props => ( props.open ) ? 'transparent' : props.theme.colors.white };
   box-shadow: 0 0 30px -15px ${props => props.theme.colors.brand1};
   display: flex;
   height: 50px;
-  lalala: ${props => props.theme.colors.brand1};
   padding: 4px 32px;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 100;
-  background-color: ${props => ( props.open ) ? 'transparent' : props.theme.colors.white };
   .NavItems, .NavSession {
     display: none;
   }
@@ -154,6 +153,7 @@ const MobileContainer = styled.div`
   top: 0;
   transition: all 0.5s ease-in-out;
   width: 100%;
+  z-index: 90;
   ${params => {
     return ( params.open )
     ? `
