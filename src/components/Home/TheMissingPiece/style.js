@@ -22,14 +22,13 @@ const Description = styled.p`
   line-height: 26px;
   text-align: center;
 `;
-
 const Items = styled.div`
   display: flex;
   flex-direction: column;
   padding-top: 40px;
 `;
 const CardPiece = styled.article`
-  background-color: #fff;
+  background-color: ${ props => props.theme.colors.white };
   border-radius: 10px;
   box-shadow: 0 10px 30px -5px rgba(5,95,230,.2);
   display: flex;
@@ -41,12 +40,12 @@ const CardPiece = styled.article`
   text-align: left;
   transition: all 1.5s ease;
   h3 {
-    color: ${ props => props.theme.colors.brand1 }
+    color: ${ props => props.theme.colors.brand1 };
     font-size: 20px;
     line-height: 26px;
   }
   p {
-    color: ${ props => props.theme.colors.brand1 }
+    color: ${ props => props.theme.colors.brand1 };
     font-size: 16px;
     line-height: 26px;
   }
