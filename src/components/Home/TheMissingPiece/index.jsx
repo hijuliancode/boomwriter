@@ -18,13 +18,20 @@ const TheMissingPieceComponent = () => {
   return (
     <TheMissingPieceElm>
       <TitleAndDescription>
-        <h2></h2>
         <Title>{ missingPieceData.title }</Title>
         <Description>{ missingPieceData.description }</Description>
         <Button type={ missingPieceData.button.type } value={ missingPieceData.button.text } style={ missingPieceData.button.style } width="auto" />
       </TitleAndDescription>
       <div class="TheMissingPieceElm__areaA">
         <Items>
+          { missingPieceData.pieces.map( piece => {
+            return (
+              <CardPiece>
+                <h3>{ piece.title }</h3>
+                <p>{ piece.description }</p>
+              </CardPiece>
+            )
+          }) }
         </Items>
       </div>
       <div class="TheMissingPieceElm__areaA">
