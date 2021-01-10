@@ -2,8 +2,6 @@ import styled, { css } from 'styled-components';
 
 const HeaderElement = styled.header`
   align-items: center;
-  background-color: ${props => ( props.open ) ? 'transparent' : props.theme.colors.white };
-  box-shadow: 0 0 30px -15px ${props => props.theme.colors.brand1};
   display: flex;
   height: 50px;
   padding: 4px 32px;
@@ -33,7 +31,6 @@ const NavItemStyle = css`
   font-weight: 400;
   margin-bottom: 12px;
   @media ${props => props.theme.MediaQueries.lg} {
-    color: ${props => props.theme.colors.brand1};
     display: inline-flex;
     font-size: 16px;
     margin-bottom: 0;

@@ -70,7 +70,7 @@ const HeroImage = styled.img`
     display: block;
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -80px;
   }
 `;
 
