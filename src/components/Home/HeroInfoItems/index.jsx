@@ -16,7 +16,7 @@ const HeroInfoItemsComponent = () => {
       {
         heroData.items.map( (item) => {
           return (
-            <ItemInfo>
+            <ItemInfo key={ item.text }>
               <img src={ item.imageUrl } alt={ item.text } />
               <p>{ item.text }</p>
               <strong>{ item.description }</strong>

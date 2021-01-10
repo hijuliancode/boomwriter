@@ -22,11 +22,11 @@ const TheMissingPieceComponent = () => {
         <Description>{ missingPieceData.description }</Description>
         <Button type={ missingPieceData.button.type } value={ missingPieceData.button.text } style={ missingPieceData.button.style } width="auto" />
       </TitleAndDescription>
-      <div class="TheMissingPieceElm__areaA">
+      <div className="TheMissingPieceElm__areaA">
         <Items>
           { missingPieceData.pieces.map( piece => {
             return (
-              <CardPiece>
+              <CardPiece key={ piece.title }>
                 <h3>{ piece.title }</h3>
                 <p>{ piece.description }</p>
               </CardPiece>
@@ -34,7 +34,7 @@ const TheMissingPieceComponent = () => {
           }) }
         </Items>
       </div>
-      <div class="TheMissingPieceElm__areaA">
+      <div className="TheMissingPieceElm__areaA">
         <BoxImageDemo>
           <img />
         </BoxImageDemo>

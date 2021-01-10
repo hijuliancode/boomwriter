@@ -1,4 +1,4 @@
-// import { guidGenerator as newId } from "../helpers/";
+import { guidGenerator as newId } from "../helpers/";
 
 import heroData from '../data/home/hero.data';
 import consistencyData from '../data/home/section-consistency.data';
