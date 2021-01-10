@@ -13,7 +13,6 @@ const Title = styled.h2`
   @media ${props => props.theme.MediaQueries.lg} {
     font-size: 50px;
     line-height: 50px;
-    text-align: left;
   }
 `;
 const TitleImage = styled.img`
@@ -26,7 +25,7 @@ const Description = styled.p`
   margin-bottom: 24px;
   text-align: center;
   @media ${props => props.theme.MediaQueries.lg} {
-    text-align: left;
+    margin-bottom: ${props => props.theme.baseSize * 15}px;
   }
 `;
 const AwardsImagesBox = styled.div`
@@ -39,6 +38,9 @@ const AwardsImagesBox = styled.div`
   gap: 16px;
   justify-content: center;
   padding: 2em;
+  @media ${props => props.theme.MediaQueries.lg} {
+    gap: 32px;
+  }
 `;
 const AwardImage = styled.img`
   max-width: 100%;
