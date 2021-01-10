@@ -3,7 +3,17 @@ import styled from 'styled-components';
 const TeachersWillElm = styled.div`
   margin-bottom: ${props => props.theme.baseSize * 12}px;
   text-align: center;
-  @media ${props => props.theme.MediaQueries.lg} {}
+  @media ${props => props.theme.MediaQueries.lg} {
+    column-gap: 32px;
+    display: flex;
+    margin-bottom: ${props => props.theme.baseSize * 24}px;
+  }
+`;
+const TitleAndButton = styled.div`
+  @media ${props => props.theme.MediaQueries.lg} {
+    text-align: left;
+    width: 25%;
+  }
 `;
 const Title = styled.h2`
   color: ${props => props.theme.colors.dark};
@@ -14,11 +24,38 @@ const Title = styled.h2`
   @media ${props => props.theme.MediaQueries.lg} {
     font-size: 50px;
     line-height: 50px;
+    margin-bottom: ${props => props.theme.baseSize * 10}px;
     text-align: left;
   }
 `;
 const FeaturesList = styled.div`
   padding-top: 24px;
+  position: relative;
+  @media ${props => props.theme.MediaQueries.lg} {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    width: 85%;
+    position: relative;
+    padding: 48px 0;
+    :before {
+      background-image: url('https://boomwriter.com/static/media/blackSphere.486b1118.svg');
+      border-radius: 50%;
+      content: "";
+      display: block;
+      height: 500px;
+      left: 50%;
+      position: absolute;
+      top: 0;
+      transform: translateX(-50%);
+      width: 500px;
+    }
+    .Feature {
+      margin: 0;
+      :nth-child(1) { transform: translateY(32px) }
+      :nth-child(3) { transform: translateY(32px) }
+    }
+  }
   .Feature {
     :nth-child(1):before { background-color: #ffa826; }
     :nth-child(2):before { background-color: #8e2bf0; }
@@ -60,6 +97,7 @@ const Feature = styled.article`
 `;
 export {
   TeachersWillElm,
+  TitleAndButton,
   Title,
   FeaturesList,
   Feature,

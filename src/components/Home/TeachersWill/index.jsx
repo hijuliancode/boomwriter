@@ -4,6 +4,7 @@ import Button from '../../shared/Button';
 
 import {
   TeachersWillElm,
+  TitleAndButton,
   Title,
   FeaturesList,
   Feature,
@@ -14,11 +15,13 @@ const TeachersWillComponent = () => {
 
   return (
     <TeachersWillElm>
-      <Title>{ teachersWillData.title }</Title>
-      <Button type={ teachersWillData.button.type } value={ teachersWillData.button.text } style={ teachersWillData.button.style } width="auto" />
+      <TitleAndButton className="TitleAndButton">
+        <Title>{ teachersWillData.title }</Title>
+        <Button type={ teachersWillData.button.type } value={ teachersWillData.button.text } style={ teachersWillData.button.style } width="auto" />
+      </TitleAndButton>
       {
         teachersWillData.features && (
-          <FeaturesList>
+          <FeaturesList className="FeaturesList">
             {
               teachersWillData.features.map(feature => (
                 <Feature key={ feature.key } className="Feature">
