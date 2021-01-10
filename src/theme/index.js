@@ -19,6 +19,7 @@
     warning: '#FFD100',
     info: '#0050B5',
     light: '#E5E5E5',
+    light2: 'hsla(0,0%,100%,.5)',
     dark: '#4b4a4a',
     muted: '#858585',
     black: '#131336',
