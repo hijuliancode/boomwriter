@@ -3,14 +3,41 @@ import HOME_API from "../../../services/homeAPI.service";
 
 import {
   KeyFeaturesElm,
+  Title,
+  FeaturesList,
+  Feature,
+  FeatureImage,
+  FeatureName,
+  FeatureTooltip,
 } from './style';
 
 const KeyFeaturesComponent = () => {
   const keyFeaturesData = HOME_API.getKeyFeaturesData();
-
+  console.log('keyFeaturesData => ', keyFeaturesData);
   return (
     <KeyFeaturesElm>
-      KeyFeaturesComponent works!
+      <Title>{ keyFeaturesData.title }</Title>
+
+      {
+        keyFeaturesData.features && (
+          <FeaturesList>
+            {
+              keyFeaturesData.features.map(feature => (
+                <Feature>
+                  <FeatureImage>
+                    <img src={ feature.iconUrl } alt={ feature.name } />
+                  </FeatureImage>
+                  <FeatureName>{ feature.name }</FeatureName>
+                  <FeatureTooltip className="FeatureTooltip">
+                    <strong>{ feature.name }</strong>
+                    { feature.description }
+                  </FeatureTooltip>
+                </Feature>
+              ))
+            }
+          </FeaturesList>
+        )
+      }
     </KeyFeaturesElm>
   );
 }

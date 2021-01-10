@@ -31,6 +31,7 @@ const HOME_API = {
   },
   getKeyFeaturesData() {
     const data = keyFeaturesData;
+    data.features.forEach( feature => feature.key = newId())
     return data;
   },
   getTeachersWillData() {
