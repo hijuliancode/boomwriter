@@ -14,10 +14,16 @@ const Title = styled.h2`
   @media ${props => props.theme.MediaQueries.lg} {
     font-size: 50px;
     line-height: 50px;
-    text-align: left;
+    margin-bottom: ${props => props.theme.baseSize * 15}px;
   }
 `;
-const CardsSlider = styled.div``;
+const CardsSlider = styled.div`
+  @media ${props => props.theme.MediaQueries.lg} {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+`;
 const Card = styled.article`
   background-color: ${props => props.theme.colors.white};
   border-radius: 10px;
@@ -28,6 +34,14 @@ const Card = styled.article`
   position: relative;
   text-align: left;
   transition: height .2s ease-in;
+  @media ${props => props.theme.MediaQueries.lg} {
+    display: flex;
+    flex-direction: column;
+    button {
+      margin-top: auto;
+      margin-right: auto;
+    }
+  }
   :nth-child(1) {
     figure {
       background-color: #f18056;
@@ -54,6 +68,9 @@ const CardImage = styled.figure`
   object-fit: cover;
   padding: 16px;
   width: 120px;
+  @media ${props => props.theme.MediaQueries.lg} {
+    margin: -60px auto 24px 0;
+  }
   img {
     max-width: 100%;
   }
