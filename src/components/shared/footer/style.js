@@ -36,7 +36,7 @@ const FooterSideA = styled.div`
       }
     }
   `;
-  const FooterAddress = styled.p`
+  const FooterAddress = styled.div`
     color: ${props => props.theme.colors.white};
     font-size: 12px;
     margin-bottom: 16px;

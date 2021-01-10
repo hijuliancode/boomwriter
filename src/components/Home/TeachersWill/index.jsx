@@ -21,7 +21,7 @@ const TeachersWillComponent = () => {
           <FeaturesList>
             {
               teachersWillData.features.map(feature => (
-                <Feature className="Feature">
+                <Feature key={ feature.key } className="Feature">
                   <h4>{ feature.title }</h4>
                   <p>{ feature.description }</p>
                 </Feature>

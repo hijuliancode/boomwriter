@@ -12,8 +12,8 @@ const HeroHomeElm = styled.section`
   flex-direction: column;
   height: calc(100vh - 50px);
   justify-content: center;
-  position: relative;
   margin-bottom: 0;
+  position: relative;
   @media ${props => props.theme.MediaQueries.lg} {
     flex-direction: row;
     margin-bottom: 120px;

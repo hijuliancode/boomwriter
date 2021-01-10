@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 const TheMissingPieceElm = styled.section`
+  margin-bottom: ${props => props.theme.baseSize * 12}px;
   @media ${props => props.theme.MediaQueries.lg} {}
 `;
 
@@ -11,16 +12,23 @@ const TitleAndDescription = styled.div`
 `;
 const Title = styled.h2`
   color: ${props => props.theme.colors.dark};
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: ${props => props.theme.baseSize * 6}px;
   text-align: center;
+  @media ${props => props.theme.MediaQueries.lg} {
+    font-size: 50px;
+    line-height: 50px;
+    text-align: left;
+  }
 `;
 const Description = styled.p`
-  color: ${props => props.theme.colors.brand1};
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 26px;
+  color: ${props => props.theme.colors.brand1}
+  margin-bottom: 24px;
   text-align: center;
+  @media ${props => props.theme.MediaQueries.lg} {
+    text-align: left;
+  }
 `;
 const Items = styled.div`
   display: flex;

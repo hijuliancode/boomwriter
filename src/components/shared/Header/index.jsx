@@ -24,7 +24,7 @@ const HeaderComponent = ({ headerStyle = 'primary' }) => {
     return (
       <NavItems className="NavItems">
         { headerData.navItems.map( ( item ) => {
-          return <NavLink to={ item.url } key={ item.id } activeClassName="selected">{ item.name }</NavLink>
+          return <NavLink onClick={ () => toggleMobileMenu() } to={ item.url } key={ item.id } activeClassName="selected">{ item.name }</NavLink>
         })}
       </NavItems>
     )
@@ -33,7 +33,7 @@ const HeaderComponent = ({ headerStyle = 'primary' }) => {
   const renderNavSession = () => {
     return (
       <NavSession className="NavSession">
-        <NavLink to={ headerData.login.url } activeClassName="selected" >{ headerData.login.text }</NavLink>
+        <NavLink onClick={ () => toggleMobileMenu() } to={ headerData.login.url } activeClassName="selected" >{ headerData.login.text }</NavLink>
         <Button type={ headerData.button.type } value={ headerData.button.text } style={ headerData.button.style } width="auto" />
       </NavSession>
     )
@@ -48,8 +48,7 @@ const HeaderComponent = ({ headerStyle = 'primary' }) => {
   }
 
   const toggleMobileMenu = () => {
-    const newState = !openMenu;
-    setOpenMenu(newState)
+    setOpenMenu(!openMenu)
   }
 
   return (

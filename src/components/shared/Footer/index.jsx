@@ -26,7 +26,7 @@ const FooterComponent = () => {
             <FooterSocial>
               {
                 footerData.socialItems.map(item => (
-                  <a href={ item.link } title={ item.name } >
+                  <a href={ item.link } title={ item.name } key={ item.name } >
                     <img src={ item.iconUrl } alt={ item.name } />
                   </a>
                 ))
@@ -48,7 +48,7 @@ const FooterComponent = () => {
             <FooterNav>
               {
                 footerData.menu.map(menu => (
-                  <FooterNav__Menu >
+                  <FooterNav__Menu key={ menu.title }>
                     <h4 className="menu__subtitle">
                       <a href={ menu.titleUrl } title={ menu.title }>
                         { menu.title }
@@ -59,7 +59,7 @@ const FooterComponent = () => {
                         <FooterNav__Menu >
                           {
                             menu.items.map(item => (
-                              <a href={ item.url } title={ item.text }>
+                              <a href={ item.url } title={ item.text } key={ item.text }>
                                 { item.text }
                               </a>
                             ))

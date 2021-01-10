@@ -13,7 +13,6 @@ import {
 
 const KeyFeaturesComponent = () => {
   const keyFeaturesData = HOME_API.getKeyFeaturesData();
-  console.log('keyFeaturesData => ', keyFeaturesData);
   return (
     <KeyFeaturesElm>
       <Title>{ keyFeaturesData.title }</Title>
@@ -23,7 +22,7 @@ const KeyFeaturesComponent = () => {
           <FeaturesList>
             {
               keyFeaturesData.features.map(feature => (
-                <Feature>
+                <Feature key={ feature.key }>
                   <FeatureImage>
                     <img src={ feature.iconUrl } alt={ feature.name } />
                   </FeatureImage>

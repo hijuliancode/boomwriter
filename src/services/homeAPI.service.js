@@ -31,11 +31,12 @@ const HOME_API = {
   },
   getKeyFeaturesData() {
     const data = keyFeaturesData;
-    data.features.forEach( feature => feature.key = newId())
+    data.features.forEach( feature => feature.key = newId());
     return data;
   },
   getTeachersWillData() {
     const data = teachersWillData;
+    data.features.forEach( feature => feature.key = newId());
     return data;
   },
   getCountriesData() {
@@ -44,6 +45,7 @@ const HOME_API = {
   },
   getSliderTestimonialsData() {
     const data = testimonialsData;
+    data.testimonials.forEach( testimonial => testimonial.key = newId());
     return data;
   },
   getAwardsData() {

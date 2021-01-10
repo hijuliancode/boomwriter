@@ -12,7 +12,7 @@ import SliderTestimonialsComponent from './SliderTestimonials';
 import AwardsComponent from './Awards';
 
 const HomeElm = styled.div`
-  padding: 50px 12px 0;
+  padding: 50px 24px 0;
   @media ${props => props.theme.MediaQueries.lg} {
     padding: 50px 24px 0;
   }
@@ -22,13 +22,13 @@ const HomeComponent = () => {
   return (
     <HomeElm className="container">
       <HeroHomeComponent />
-      <HeroInfoItemsComponent />
       <ConsistencyComponent />
       <TheMissingPieceComponent />
       <TeachersToolboxComponent />
       <KeyFeaturesComponent />
       <TeachersWillComponent />
       <CountriesComponent />
+      <HeroInfoItemsComponent />
       <SliderTestimonialsComponent />
       <AwardsComponent />
     </HomeElm>

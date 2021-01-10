@@ -5,19 +5,20 @@ import {
   AwardsElm,
   Title,
   TitleImage,
+  Description,
   AwardsImagesBox,
   AwardImage,
 } from './style.js';
 
 const AwardsComponent = () => {
   const awardsData = HOME_API.getAwardsData();
-console.log(awardsData);
   return (
     <AwardsElm>
       <Title>
         <TitleImage src={ awardsData.titleImageUrl } />
         { awardsData.title }
       </Title>
+      <Description>{ awardsData.description }</Description>
       {
         awardsData.awards && (
           <AwardsImagesBox>

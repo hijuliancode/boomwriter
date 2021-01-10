@@ -24,7 +24,7 @@ const SliderTestimonialsComponent = () => {
           <Testimonials>
             {
               sliderTestimonialsData.testimonials.map(testm => (
-                <TestimonialCard>
+                <TestimonialCard key={ testm.key }>
                   <TwitterIcon href={testm.tweetUrl} target="_blank">
                     <img src="https://boomwriter.com/static/media/twitter.591ff2a4.svg" alt="" />
                   </TwitterIcon>

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const ConsistencyElm = styled.section`
-  padding-bottom: 24px;
+  padding-bottom: 48px;
   @media ${props => props.theme.MediaQueries.lg} {
     display: flex;
     justify-content: space-around;
@@ -27,13 +27,13 @@ const ImageProcess = styled.img`
 
 const Title = styled.h2`
   color: ${props => props.theme.colors.dark};
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 40px;
-  margin-bottom: 24px;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: ${props => props.theme.baseSize * 6}px;
   text-align: center;
   @media ${props => props.theme.MediaQueries.lg} {
     font-size: 50px;
+    line-height: 50px;
     text-align: left;
   }
 `;
