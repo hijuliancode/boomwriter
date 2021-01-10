@@ -6,7 +6,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     background-image: url('https://boomwriter.com/static/media/hpWhiteWaveBg.63b7b4c7.png');
     background-position: 0 1600px;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     font-family: ${props => props.theme.typography.primary.name};
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

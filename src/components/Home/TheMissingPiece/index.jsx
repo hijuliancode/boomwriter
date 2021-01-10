@@ -18,9 +18,9 @@ const TheMissingPieceComponent = () => {
   return (
     <TheMissingPieceElm>
       <TitleAndDescription>
-        <Title>{ missingPieceData.title }</Title>
-        <Description>{ missingPieceData.description }</Description>
-        <Button type={ missingPieceData.button.type } value={ missingPieceData.button.text } style={ missingPieceData.button.style } width="auto" />
+        <Title className="Title">{ missingPieceData.title }</Title>
+        <Description className="Description">{ missingPieceData.description }</Description>
+        <Button className="Button" type={ missingPieceData.button.type } value={ missingPieceData.button.text } style={ missingPieceData.button.style } width="auto" />
       </TitleAndDescription>
       <div className="TheMissingPieceElm__areaA">
         <Items>

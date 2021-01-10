@@ -68,9 +68,9 @@ const HeroImage = styled.img`
   display: none;
   @media ${props => props.theme.MediaQueries.lg} {
     display: block;
-    position: absolute;
+    height: 760px;
     left: 0;
-    bottom: -80px;
+    position: absolute;
   }
 `;
 

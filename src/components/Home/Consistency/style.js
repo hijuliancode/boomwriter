@@ -5,7 +5,6 @@ const ConsistencyElm = styled.section`
   @media ${props => props.theme.MediaQueries.lg} {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 120px;
   }
   .ConsistencyElm__areaA,
   .ConsistencyElm__areaB {
