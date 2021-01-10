@@ -48,6 +48,7 @@ const HOME_API = {
   },
   getAwardsData() {
     const data = awardsData;
+    data.awards.forEach( award => award.key = newId())
     return data;
   },
 }
