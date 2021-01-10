@@ -1,12 +1,14 @@
 import styled from 'styled-components';
 
 const HeroInfoItemsElm = styled.section`
-  display: none;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 48px;
   @media ${props => props.theme.MediaQueries.lg} {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 48px;
+    justify-content: space-around;
     padding-top: 40px;
+    flex-direction: row;
   }
 `;
 
@@ -15,6 +17,7 @@ const ItemInfo = styled.div`
   grid-template-areas:
     "itemInfo_img itemInfo_text"
     "itemInfo_img itemInfo_desc";
+  width: 220px;
   img {
     grid-area: itemInfo_img;
     margin-right: 12px;
