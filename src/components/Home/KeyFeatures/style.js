@@ -13,7 +13,7 @@ const Title = styled.h2`
   @media ${props => props.theme.MediaQueries.lg} {
     font-size: 50px;
     line-height: 50px;
-    text-align: left;
+    margin-bottom: ${props => props.theme.baseSize * 15}px;
   }
 `;
 const FeaturesList = styled.div`
@@ -21,6 +21,11 @@ const FeaturesList = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   gap: 16px;
+  @media ${props => props.theme.MediaQueries.lg} {
+    gap: 24px;
+    margin: 0 auto;
+    max-width: 1024px;
+  }
 `;
 const Feature = styled.div`
   align-items: center;
@@ -38,6 +43,10 @@ const Feature = styled.div`
     .FeatureTooltip {
       display: block;
     }
+  }
+  @media ${props => props.theme.MediaQueries.lg} {
+    height: 180px;
+    width: 180px;
   }
 `;
 const FeatureImage = styled.figure`
