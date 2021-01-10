@@ -25,7 +25,8 @@ const Description = styled.p`
   margin-bottom: 24px;
   text-align: center;
   @media ${props => props.theme.MediaQueries.lg} {
-    margin-bottom: ${props => props.theme.baseSize * 15}px;
+    font-size: 18px;
+    margin-bottom: ${props => props.theme.baseSize * 10}px;
   }
 `;
 const AwardsImagesBox = styled.div`

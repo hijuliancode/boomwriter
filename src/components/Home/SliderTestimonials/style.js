@@ -13,7 +13,6 @@ const Title = styled.h2`
   @media ${props => props.theme.MediaQueries.lg} {
     font-size: 50px;
     line-height: 50px;
-    text-align: left;
   }
 `;
 const Description = styled.p`
@@ -21,10 +20,17 @@ const Description = styled.p`
   margin-bottom: 24px;
   text-align: center;
   @media ${props => props.theme.MediaQueries.lg} {
-    text-align: left;
+    font-size: 18px;
+    margin-bottom: ${props => props.theme.baseSize * 10}px;
   }
 `;
-const Testimonials = styled.div``;
+const Testimonials = styled.div`
+  @media ${props => props.theme.MediaQueries.lg} {
+    column-gap: 24px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+`;
 const TestimonialCard = styled.article`
   background-color: ${props => props.theme.colors.white};
   border-radius: 24px;
@@ -36,6 +42,10 @@ const TestimonialCard = styled.article`
     font-size: 16px;
     line-height: 20px;
     margin: 0;
+  }
+  @media ${props => props.theme.MediaQueries.lg} {
+    display: flex;
+    flex-direction: column;
   }
 `;
 const TwitterIcon = styled.a`
@@ -61,6 +71,9 @@ const User = styled.a`
     "area_image area_name"
     "area_image area_occupation";
   grid-template-columns: 80px 1fr;
+  @media ${props => props.theme.MediaQueries.lg} {
+    margin-top: auto;
+  }
   img {
     border-radius: 100%;
     display: block;
