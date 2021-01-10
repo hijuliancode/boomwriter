@@ -13,6 +13,7 @@ const HeaderElement = styled.header`
     display: none;
   }
   @media ${props => props.theme.MediaQueries.lg} {
+    background-color: ${props => props.theme.colors.white};
     .NavItems, .NavSession {
       display: flex;
     }
@@ -25,7 +26,7 @@ const LogoImage = styled.img`
 `;
 
 const NavItemStyle = css`
-  color: ${props => props.theme.colors.white};
+  color: ${props => props.theme.colors.brand1};
   display: flex;
   font-size: 24px;
   font-weight: 400;
