@@ -19,7 +19,7 @@ const FooterComponent = () => {
   const footerData = GLOBAL_API.getFooterData();
   return (
     <FooterElement>
-      <FooterSideA>
+      <FooterSideA className="FooterSideA">
         <FooterLogo src={ footerData.logoUrl } alt="Improve Student Writing | Teachers Parents | Boomwriter" />
         {
           footerData.socialItems && (
@@ -42,7 +42,7 @@ const FooterComponent = () => {
           </p>
         </FooterAddress>
       </FooterSideA>
-      <FooterSideB>
+      <FooterSideB className="FooterSideB">
         {
           footerData.menu && (
             <FooterNav>
