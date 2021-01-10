@@ -13,7 +13,7 @@ import {
     ButtonBurger,
     ButtonBurgerIcon,
     MobileContainer,
-  } from './style'
+  } from './style.js'
 
 const HeaderComponent = ({ headerStyle = 'primary' }) => {
   const [ openMenu, setOpenMenu ] = useState(false);

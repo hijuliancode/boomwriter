@@ -10,7 +10,7 @@ import {
   Items,
   CardPiece,
   BoxImageDemo,
-} from './style';
+} from './style.js';
 
 const TheMissingPieceComponent = () => {
   const missingPieceData = HOME_API.getMissingPieceData();

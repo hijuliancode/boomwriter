@@ -9,7 +9,7 @@ import {
   FeatureImage,
   FeatureName,
   FeatureTooltip,
-} from './style';
+} from './style.js';
 
 const KeyFeaturesComponent = () => {
   const keyFeaturesData = HOME_API.getKeyFeaturesData();

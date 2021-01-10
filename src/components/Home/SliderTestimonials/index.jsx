@@ -9,7 +9,7 @@ import {
   TestimonialCard,
   TwitterIcon,
   User,
-} from './style';
+} from './style.js';
 
 const SliderTestimonialsComponent = () => {
   const sliderTestimonialsData = HOME_API.getSliderTestimonialsData();

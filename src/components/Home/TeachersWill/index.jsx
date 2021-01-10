@@ -7,7 +7,7 @@ import {
   Title,
   FeaturesList,
   Feature,
-} from './style';
+} from './style.js';
 
 const TeachersWillComponent = () => {
   const teachersWillData = HOME_API.getTeachersWillData();

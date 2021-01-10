@@ -5,7 +5,7 @@ import HOME_API from "../../../services/homeAPI.service";
 import {
   HeroInfoItemsElm,
   ItemInfo,
-} from './style';
+} from './style.js';
 
 const HeroInfoItemsComponent = () => {
 

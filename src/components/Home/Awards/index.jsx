@@ -7,7 +7,7 @@ import {
   TitleImage,
   AwardsImagesBox,
   AwardImage,
-} from './style';
+} from './style.js';
 
 const AwardsComponent = () => {
   const awardsData = HOME_API.getAwardsData();

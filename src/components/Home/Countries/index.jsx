@@ -5,7 +5,7 @@ import {
   CountriesElm,
   Title,
   CountriesImage,
-} from './style';
+} from './style.js';
 
 const CountriesComponent = () => {
   const countriesData = HOME_API.getCountriesData();

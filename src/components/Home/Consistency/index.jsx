@@ -8,7 +8,7 @@ import {
   Description,
   ImageProcess,
   ImageWeek,
-} from './style';
+} from './style.js';
 
 const ConsistencyComponent = () => {
   const consistencyData = HOME_API.getConsistencyData();

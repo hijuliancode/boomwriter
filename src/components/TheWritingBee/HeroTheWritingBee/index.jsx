@@ -4,7 +4,7 @@ import WRITINGBEE_API from "../../../services/writingBeeAPI.service";
 
 import {
   HeroTheWritingBeeElm,
-} from './style';
+} from './style.js';
 
 const HeroTheWritingBeeComponent = () => {
 

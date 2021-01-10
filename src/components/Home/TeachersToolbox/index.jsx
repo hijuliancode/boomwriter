@@ -11,7 +11,7 @@ import {
   CardTitle,
   CardDescription,
   SliderArrow,
-} from './style';
+} from './style.js';
 
 const TeachersToolboxComponent = () => {
   const teachersToolboxData = HOME_API.getTeacherToolboxData();

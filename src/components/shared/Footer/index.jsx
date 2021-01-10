@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { FooterElement } from './style'
+import { FooterElement } from './style.js'
 
 const FooterComponent = () => {
   return (

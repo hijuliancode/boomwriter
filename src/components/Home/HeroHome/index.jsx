@@ -10,7 +10,7 @@ import {
   Description,
   Recommended,
   HeroImage,
-} from './style';
+} from './style.js';
 
 const HeroHomeComponent = () => {
 
